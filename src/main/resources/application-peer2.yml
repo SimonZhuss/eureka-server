@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: eureka-server
+
+server:
+  port: ${zss.eureka2.port}
+eureka:
+  instance:
+    hostname: ${zss.eureka2.host}
+  client:
+    service-url:
+      defaultZone: http://${zss.eureka1.host}:${zss.eureka1.port}/eureka/,http://${zss.eureka3.host}:${zss.eureka3.port}/eureka/
+
+logging:
+  config: ${log.path}/logback.xml
