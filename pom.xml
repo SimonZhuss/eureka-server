@@ -50,7 +50,7 @@
 				<filtering>true</filtering>
 			</resource>
 		</resources>
-	 <finalName>ganjs-eureka-server</finalName>
+	 <finalName>eureka-server</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

@@ -15,8 +15,7 @@ public class EurekaServerApplication {
 	
 	public static void main(String[] args) {
 
-		/*String envPath = System.getenv(EurekaConstants.ENV_CONF_PATH.toUpperCase());*/
-		String envPath = "E:\\github-zss\\config\\eureka-server\\";
+		String envPath = System.getenv(EurekaConstants.ENV_CONF_PATH.toUpperCase());
 		if (StringUtils.isEmpty(envPath)) {
 			throw new IllegalStateException(EurekaConstants.ENV_CONF_PATH.toUpperCase() + " is blank");
 		}
