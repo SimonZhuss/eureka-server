@@ -15,6 +15,8 @@ rz eureka-server.jar
 rz startup.sh
 rz nohup.out
 ./startup.sh
+这里要给startup.sh赋予权限：chmod a+x startup.sh
+或者直接通过 bash ./startup.sh 进行启动服务
 
 服务BOOT启动类：
 @EnableEurekaServer
